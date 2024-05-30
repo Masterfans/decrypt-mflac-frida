@@ -20,12 +20,15 @@ python find_repeat.py 文件夹A 文件夹B
 该命令会找出同时存在A和B文件夹下面的文件(后缀名不同也算是相同文件)移动到文件夹A下面的repeat_move目录
 
 执行前目录结构
+
+```
 --A
 ---B.mflac
 ---C.mflac
 
 --B
 --B.flac
+```
 
 执行命令
 
@@ -34,12 +37,15 @@ python find_repeat.py A B
 ```
 
 处理后目录结构
+
+```
 --A
 ----repeat_move
 ------B.mflac
 ---C.mflac
 --B
 --B.flac
+```
 
 不会改变B目录结构，会把A目录下出现在B目录的同名文件(忽略后缀名不同)移动到repeat_move目录
 
